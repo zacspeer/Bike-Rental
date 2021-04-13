@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="395dp"
+        android:layout_height="847dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="731dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <ImageView
+        android:id="@+id/menuBar"
+        android:layout_width="549dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="644dp"
+        android:src="@drawable/menu_bar_v2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/helpButton"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="680dp"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="57dp"
+        tools:layout_conversion_absoluteWidth="64dp" />
+
+    <ImageView
+        android:id="@+id/shareButton"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="24dp"
+        android:src="@android:drawable/ic_menu_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="53dp"
+        tools:layout_conversion_absoluteWidth="56dp" />
+
+    <TextView
+        android:id="@+id/shareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Share"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shareButton"
+        tools:layout_conversion_absoluteHeight="25dp"
+        tools:layout_conversion_absoluteWidth="59dp" />
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="  Help"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpButton"
+        tools:layout_conversion_absoluteHeight="28dp"
+        tools:layout_conversion_absoluteWidth="59dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="182dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="572dp"
+        android:src="@drawable/circle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/searchButton"
+        android:layout_width="134dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/untitled_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="137dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:text="   Find a Vehicle"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchButton"
+        tools:layout_conversion_absoluteHeight="34dp"
+        tools:layout_conversion_absoluteWidth="139dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
